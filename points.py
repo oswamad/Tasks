@@ -1,3 +1,6 @@
+#Given scattered points in the X-Y plane with coordinates (x0, y0), (x1, y1), …, (xn, yn), write a Python
+#function that finds groups of close-by point clusters. The number of required clusters is an input
+#to this function.
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.cluster import KMeans
@@ -47,10 +50,4 @@ for i in range(len(x)):
 #implementation
 cluster(points,k)
 
-#Transform list of points arrays to 2 lists
-x = []
-y = []
-for index, i in enumerate(points):
-    x.append(points[index][0])
-    y.append(points[index][1])
 
